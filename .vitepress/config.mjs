@@ -7,7 +7,10 @@ export default defineConfig({
   title: "frontend",
   description: "guía práctica sobre tecnologías de frontend, estructura de carpetas, arquitectura y buenas prácticas de desarrollo",
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: '/public/logo_v2.png' }]
+    ['link', { rel: 'icon', type: 'image/png', href: '/public/logo_v2.png' }],
+    ['script', {}, `
+      localStorage.setItem('vitepress-theme-appearance', 'light');
+    `]
   ],
   themeConfig: {
     logo: '/public/logo_v2.png',
@@ -17,6 +20,7 @@ export default defineConfig({
         placeholder: 'Buscar documentación'
       }
     },
+    colorMode: 'light',
     outlineTitle: 'En esta página',
     outline: [2, 3],
     docFooter: {
@@ -78,7 +82,7 @@ export default defineConfig({
         text: 'Menu',
         items: [
           { text: 'Entorno de trabajo', link: '/entorno-trabajo' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
+          { text: 'Niveles de aplicación', link: '/nivel-aplicacion' },
         ]
       }
     ],
