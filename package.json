@@ -1,0 +1,22 @@
+{
+  "name": "frontend-docs",
+  "version": "1.0.0",
+  "description": "guía práctica sobre tecnologías de frontend, estructura de carpetas, arquitectura y buenas prácticas de desarrollo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "keywords": [
+    "guia",
+    "frontend",
+    "desarrollo-web"
+  ],
+  "author": "Cristhian Dev.",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "^2.0.0-alpha.15"
+  }
+}
