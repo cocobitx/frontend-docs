@@ -17,9 +17,15 @@ export default defineConfig({
         placeholder: 'Buscar documentación'
       }
     },
+    outlineTitle: 'En esta página',
+    outline: [2, 3],
+    docFooter: {
+      prev: 'Página anterior',
+      next: 'Siguiente página'
+    },
     nav: [
       { text: 'Inicio', link: '/' },
-      { text: 'Documentación', link: '/markdown-examples' },
+      { text: 'Documentación', link: '/entorno-trabajo' },
       {
         text: 'Css3',
         items: [
@@ -69,10 +75,10 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Menu',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Entorno de trabajo', link: '/entorno-trabajo' },
+          { text: 'Runtime API Examples', link: '/api-examples' },
         ]
       }
     ],
