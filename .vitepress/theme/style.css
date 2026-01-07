@@ -116,6 +116,23 @@
   :root {
     --vp-home-hero-image-filter: blur(68px);
   }
+  
+  .VPHero .image-bg {
+    width: 420px;
+    height: 400px;
+    filter: blur(120px);
+    background-image: linear-gradient(-45deg, #bd34fea1 50%, #47caffa1 50%);
+  }
+    
+  .VPHero .image-container {
+    height : 110%;
+    transform: translate(-32px, -50px);
+  }
+  
+  .VPHero .image-src {
+    max-width: 400px;
+    max-height :460px;
+  }
 }
 
 /**
@@ -137,3 +154,12 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+
+
+/**
+ * Modify CSS
+ * -------------------------------------------------------------------------- */
+ 
+.VPHero .image-src {
+  object-fit: unset;
+}

@@ -5,21 +5,30 @@ layout: home
 hero:
   name: "frontend"
   text: "Guia practica de desarrollo web"
-  tagline: Documentacion sobre tecnologias, estructura de carpetas, arquitectura y buenas prácticas de desarrollo
+  tagline: Documentacion sobre tecnologias, estructura de carpetas, arquitectura y buenas prácticas
+  image:
+    src: /public/home/home.png
+    alt: Imagen de una persona usando celular
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: Ver documentación
       link: /markdown-examples
     - theme: alt
-      text: API Examples
+      text: Ver backend docs
       link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: |
+      <img src="/home/aprendizaje.png" />
+    title: Aprendizaje
+    details: Guías progresivas desde fundamentos hasta patrones avanzados de desarrollo frontend, con ejemplos claros y aplicables.
+  - icon: |
+      <img src="/home/arquitectura.png"/>
+    title: Arquitectura
+    details: Estructuración de proyectos frontend escalables, organización de código y decisiones técnicas orientadas a mantenibilidad.
+  - icon: |
+      <img src="/home/metodologia.png"/>
+    title: Metodologias
+    details: Buenas prácticas de trabajo, flujos modernos y estándares usados en equipos frontend profesionales.
 ---
 
