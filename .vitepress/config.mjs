@@ -6,6 +6,9 @@ export default defineConfig({
   
   title: "frontend",
   description: "guía práctica sobre tecnologías de frontend, estructura de carpetas, arquitectura y buenas prácticas de desarrollo",
+  head: [
+    ['link', { rel: 'icon', type: 'image/png', href: '/public/logo_v2.png' }]
+  ],
   themeConfig: {
     logo: '/public/logo_v2.png',
     search: {
