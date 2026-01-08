@@ -3,17 +3,16 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   srcDir: "docs",
-  
   title: "frontend",
   description: "guía práctica sobre tecnologías de frontend, estructura de carpetas, arquitectura y buenas prácticas de desarrollo",
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: '/public/logo_v2.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/logo_v2.png' }],
     ['script', {}, `
       localStorage.setItem('vitepress-theme-appearance', 'light');
     `]
   ],
   themeConfig: {
-    logo: '/public/logo_v2.png',
+    logo: '/logo_v2.png',
     search: {
       provider: 'local',
       options: {

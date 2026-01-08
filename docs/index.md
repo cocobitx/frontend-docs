@@ -7,7 +7,7 @@ hero:
   text: "Guia practica de desarrollo web"
   tagline: Documentacion sobre tecnologias, estructura de carpetas, arquitectura y buenas prácticas
   image:
-    src: /public/home/home.png
+    src: /home/home.png
     alt: Imagen de una persona usando celular
   actions:
     - theme: brand
