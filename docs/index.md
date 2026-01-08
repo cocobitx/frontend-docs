@@ -12,10 +12,10 @@ hero:
   actions:
     - theme: brand
       text: Ver documentación
-      link: /markdown-examples
+      link: /entorno-trabajo
     - theme: alt
       text: Ver backend docs
-      link: /api-examples
+      link: https://spring.io/projects/spring-boot
 
 features:
   - icon: |

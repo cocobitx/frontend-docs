@@ -59,15 +59,10 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Practicas',
-        items: [
-          { text: 'devchallenge', link: 'https://devchallenges.io/' },
-          { text: 'frontendmentor', link: 'https://www.frontendmentor.io/' }
-        ]
-      },
-      {
         text: 'Recursos',
         items: [
+          { text: 'devchallenge', link: 'https://devchallenges.io/' },
+          { text: 'frontendmentor', link: 'https://www.frontendmentor.io/' },
           { text: 'collect ui', link: 'https://collectui.com/designs' },
           { text: 'devdocs', link: 'https://devdocs.io/' },
           { text: 'roadmap', link: 'https://roadmap.sh/frontend' },
