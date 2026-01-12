@@ -21,7 +21,7 @@ export default defineConfig({
     },
     colorMode: 'light',
     outlineTitle: 'En esta página',
-    outline: [2, 3],
+    outline: [3, 4],
     docFooter: {
       prev: 'Página anterior',
       next: 'Siguiente página'
@@ -77,6 +77,19 @@ export default defineConfig({
         items: [
           { text: 'Entorno de trabajo', link: '/entorno-trabajo' },
           { text: 'Niveles de aplicación', link: '/nivel-aplicacion' },
+          { text: 'Arquitectura modular', link: '/estructura-modular' },
+          { text: 'Estructura de carpetas', link: '/estructura-carpeta' },
+          { text: 'Practicas de SEO', link: '/seo' },
+          { 
+            text: 'Estructura del documento', 
+            collapsible: true,
+            collapsed: false,
+            items: [
+              { text: 'Definir idioma', link: '/document/definir-idioma' },
+              { text: 'Metadatos', link: '/document/metadatos' },
+              { text: 'Orden del encabezado', link: '/document/orden-encabezado' },
+            ]
+          },
         ]
       }
     ],
