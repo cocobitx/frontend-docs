@@ -4,71 +4,33 @@ La Arquitectura Modular es un enfoque de diseño de software que consiste en div
 
 Cada módulo está diseñado para cumplir una función específica y puede conectarse con otros para formar un sistema completo. La clave es que cada pieza puede funcionar, probarse y mantenerse sin afectar necesariamente a las demás.
 
+Para estructurar los modulos se basaran en las rutas, cada ruta sera un modulo por el cual tendra todo lo necesario para renderizar esa vista.
 
 ```md
-https://www.mysite.com/dashboard/inventary/shoes
-|_____________________||________||________||_____|
+https://www.mysite.com/dashboard/inventory/{params}
+|_____________________||________||________||______|
    Entrada principal     Modulo  Submodulo  Vista
          App.vue
 ``` 
 
-Cada ruta se basara en un modulo, ahora para estructurar correctamente los modulos se clasificaran por 3 tipos segun la complejidad:
+#### Modulo
+Cada ruta tiene un path principal, se crea un modulo para cada path inicial `/home`
 
-### Modular tipo 1
-Cuando la aplicación no contiene submodulos y su complejidad es baja, se genera un modulo simple.
-
-```md
-https://www.mysite.com/home
-                      |____|
-                      Modulo
-``` 
 ![Modular 1](/modular1.png)
 
-### Modular tipo 2
-Cuando la aplicacion ya contiene submodulos, es decir rutas con 2 niveles de profundidad.
+### Submodulo
+El path inicial puede contener rutas hijas, por lo tanto se convierte en submodulos del modulo principal 
+`/auth/login` y `/auth/register`
 
-```md
-https://www.mysite.com/auth/login
-https://www.mysite.com/auth/register
-                      |____||______|
-                      Modulo Submodulo
-``` 
 ![Modular 2](/modular2.png)
 
-### Modular tipo 3
-Cuando la aplicacion contiene parametros, estos parametros seran tratados como vistas y no como modulos, ya
-que conviven con el modulo.
+### Vista
+Los path pueden contener parametros, estos parametros seran vistas unicamente del modulo o submodulo
+`auth/login/{params}` o `auth/{params}`, el nivel de profundidad no es importante, si se agrega un `/{params}` sera visto como una vista.
 
-```md
-https://www.mysite.com/auth/login/{parametros}
-https://www.mysite.com/auth/register/{parametros}
-                      |____||_______||__________|
-                      Modulo Submodulo   Vista
-``` 
 ![Modular 3](/modular3.png)
 
-### Cuando usar modulos, submodulos y vistas
+### En funcionamiento
+Cada modulo puede hacer uso de los recursos exteriores u otros modulos del exterior sin el exterior depender del modulo, asi facilita la eliminacion de un modulo sin romper la aplicacion. En el siguiente paso se explicara a detalle la estructura de las carpetas.
 
-Los modulos se utilizan principalmente para escalar el proyecto, cuando se tiene varias rutas donde cada ruta representa un modulo que trae todo lo necesario para renderizar
-
-```md
-https://www.mysite.com/module-a
-https://www.mysite.com/module-b
-``` 
-los Submodulos se utilizan cuando el modulo principal tiene rutas hijas.
-```md
-https://www.mysite.com/module-a
-https://www.mysite.com/module-a/submodule-a
-https://www.mysite.com/module-a/submodule-b
-https://www.mysite.com/module-b
-``` 
-y las vistas es cuando un modulo o submodulo genera parametros, ya que los parametros convive con el modulo en datos, servicios etc
-```md
-https://www.mysite.com/module-a/{params-a}
-https://www.mysite.com/module-a/{params-b}
-https://www.mysite.com/module-a/submodule-a/{params-a}
-``` 
-### Estructura global
-cada modulo pueda hacer uso de los recursos exteriores sin el exterior depender del modulo, asi facilita la eliminacion de un modulo sin romper la aplicacion
-
-![Estructura global](/estructura-global.png)
+![Estructura global](/modular-flow.png)
