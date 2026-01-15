@@ -3,19 +3,19 @@
 layout: home
 
 hero:
-  name: "frontend"
+  name: "Softdocs"
   text: "Guia practica de desarrollo web"
-  tagline: Documentacion sobre tecnologias, estructura de carpetas, arquitectura y buenas prácticas
+  tagline: Documentacion sobre tecnologias, metodologias de desarrollo, estructura, arquitectura y buenas prácticas
   image:
-    src: /home/home.png
+    src: /home/hero.png
     alt: Imagen de una persona usando celular
   actions:
     - theme: brand
       text: Ver documentación
-      link: /entorno-trabajo
+      link: /frontend/entorno-trabajo
     - theme: alt
-      text: Ver backend docs
-      link: https://spring.io/projects/spring-boot
+      text: Ver componentes
+      link: /
 
 features:
   - icon: |
