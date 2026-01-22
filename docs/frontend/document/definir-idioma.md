@@ -1,4 +1,4 @@
-# Definir idioma
+# <span style="display: flex;"><img src="/check.png" style="width: 38px; height: 38px; margin-right:10px"> Definir idioma</span>
 
 En HTML5, es una buena práctica obligatoria para SEO y accesibilidad definir el idioma principal del documento mediante el atributo `lang` en la etiqueta `<html>`, Este atributo:
 
@@ -40,7 +40,7 @@ Existen dos enfoques comunes para lograrlo.
 1. Cambio dinámico del atributo `lang`
 Este método es frecuente en frameworks que renderizan contenido dinámico.
 
-      ```html
+      ```html:line-numbers
       <html lang="{app.locale}">...</html>
       ``` 
       
@@ -57,7 +57,7 @@ Este método es frecuente en frameworks que renderizan contenido dinámico.
 2. Definición del idioma por URL
 Este método requiere más mantenimiento y espacio en servidor, pero es el más sólido a nivel SEO.
 
-    ```bash
+    ```md
     example.com/en/
     example.com/es/
     example.com/fr/
